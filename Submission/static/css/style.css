@@ -29,7 +29,8 @@ a:hover {
 
 /* Part A: Make the image responsive */
 img {
-  /* Put your responsive image CSS in here */
+  max-width: 100%;
+  height: auto;
 }
 
 /* Default colour scheme */
@@ -50,4 +51,39 @@ img {
   color: #272343;
 }
 
-/* Part B and C - Add colour schemes for tablet and desktop browsers below */
+/* Part B: Tablet design */
+@media (min-width: 48rem) {
+  .background {
+    background: #fec7d7;
+  }
+
+  .heading,
+  .paragraph {
+    color: #0e172c;
+  }
+
+  .button {
+    color: #fffffe;
+    background: #0e172c;
+  }
+}
+
+/* Part C: Desktop design */
+@media (min-width: 64rem) {
+  .background {
+    background: #16161a;
+  }
+
+  .heading {
+    color: #fffffe;
+  }
+
+  .paragraph {
+    color: #94a1b2;
+  }
+
+  .button {
+    color: #fffffe;
+    background: #7f5af0;
+  }
+}
